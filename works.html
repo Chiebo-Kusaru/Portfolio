@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Работы | Мареев Александр</title>
+    <link rel="shortcut icon" href="фото/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/Учусьnormalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="index.html" class="logo">
+                        <span class="logo__text">Портфолио</span>
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html" class="nav__link">Главная</a></li>
+                            <li class="nav__item"><a href="about.html" class="nav__link">О себе</a></li>
+                            <li class="nav__item"><a href="achievements.html" class="nav__link">Достижения</a></li>
+                            <li class="nav__item"><a href="works.html" class="nav__link nav__link--active">Работы</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+    <div class="container">
+        <h1 class="page-title">Мои работы</h1>
+        
+        <div class="tabs">
+            <div class="tabs__nav">
+                <button class="tabs__btn tabs__btn--active" data-tab="gimp">Gimp</button>
+                <button class="tabs__btn" data-tab="inkscape">Inkscape</button>
+                <button class="tabs__btn" data-tab="scribus">Scribus</button>
+                <button class="tabs__btn" data-tab="html">Интерент сервисы</button>
+            </div>
+            
+            <div class="tabs__content">
+                <!-- Gimp вкладка -->
+                <div class="tab-pane tab-pane--active" id="gimp">
+                    <div class="works-grid">
+                        <!-- Карточка работы 1 -->
+                        <div class="work-card" onclick="openWorkPopup('фото/gimp/gimp1.png', 'Редактирование фото')">
+                            <div class="work-card__image">
+                                <img src="фото/gimp/gimp1.png" alt="Редактирование фото" class="work-card__img">
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Редактирование фото</h3>
+                            </div>
+                        </div>
+
+                        <!-- Карточка работы 2 (с плейсхолдером) -->
+                        <div class="work-card" onclick="openWorkPopup('фото/gimp/gimp2.png', 'Редактирование фото')">
+                            <div class="work-card__image">
+                                <img src="фото/gimp/gimp2.png" alt="Редактирование фото" class="work-card__img">
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Работа со свечением</h3>
+                            </div>
+                        </div>
+
+                        <div class="work-card" onclick="openWorkPopup('фото/gimp/gimp3.png', 'Редактирование фото')">
+                            <div class="work-card__image">
+                                <img src="фото/gimp/gimp3.png" alt="Редактирование фото" class="work-card__img">
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Работа с текстом</h3>
+                            </div>
+                        </div>
+
+                        <div class="work-card" onclick="openWorkPopup('фото/gimp/gimp4.png', 'Редактирование фото')">
+                            <div class="work-card__image">
+                                <img src="фото/gimp/gimp4.png" alt="Редактирование фото" class="work-card__img">
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Работа с изображенрием</h3>
+                            </div>
+                        </div>
+
+                        <div class="work-card" onclick="openWorkPopup('фото/gimp/pizza.jpg', 'Редактирование фото')">
+                            <div class="work-card__image">
+                                <img src="фото/gimp/pizza.jpg" alt="Редактирование фото" class="work-card__img">
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Работа с изображенрием</h3>
+                            </div>
+                        </div>
+                        <div class="work-card" onclick="openWorkPopup('фото/gimp/cho.jpg', 'Редактирование фото')">
+                            <div class="work-card__image">
+                                <img src="фото/gimp/cho.jpg" alt="Редактирование фото" class="work-card__img">
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Работа с изображенрием</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Inkscape вкладка -->
+                <div class="tab-pane" id="inkscape">
+                    <div class="works-grid">
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/ink1.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/ink1.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Мороженное</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/pic.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/pic.png" alt="Редактирование фото" class="work-card__img">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Спиральный текст</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/ink.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/ink.png" alt="Редактирование фото" class="work-card__img">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Пингвин</h3>
+                            </div>
+                        </div>
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/ink2.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/ink2.png" alt="Редактирование фото" class="work-card__img">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Сок</h3>
+                            </div>
+                        </div>
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/ink3.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/ink3.png" alt="Редактирование фото" class="work-card__img">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Солнце</h3>
+                            </div>
+                        </div>
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/zax.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/zax.png" alt="Редактирование фото" class="work-card__img">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Открытка на пасху</h3>
+                            </div>
+                        </div>
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/ink11.jpg', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/ink11.jpg" alt="Редактирование фото" class="work-card__img">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Чашка кофе</h3>
+                            </div>
+                        </div>
+                        <div class="work-card" onclick="openWorkPopup('фото/ink/ink10.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/ink/ink10.png" alt="Редактирование фото" class="work-card__img">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Кукла</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scribus вкладка -->
+<div class="tab-pane" id="scribus">
+    <div class="works-grid">
+        <div class="work-card" onclick="openWorkPopup('фото/scribus/buklet1.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/buklet1.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Буклет></h3>
+                            </div>
+                        </div>
+
+        <div class="work-card" onclick="openWorkPopup('фото/scribus/buklet2.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/buklet2.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Буклет</h3>
+                            </div>
+                        </div>
+
+        <div class="work-card" onclick="openWorkPopup('фото/scribus/gagarin.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/gagarin.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Журнал</h3>
+                            </div>
+                        </div>
+
+        <div class="work-card" onclick="openWorkPopup('фото/scribus/fakt.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/fakt.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Журнал</h3>
+                            </div>
+                        </div>
+
+                        <div class="work-card" onclick="openWorkPopup('фото/scribus/polet.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/polet.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Журнал</h3>
+                            </div>
+                        </div>
+
+                        <div class="work-card" onclick="openWorkPopup('фото/scribus/nebo.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/nebo.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Журнал</h3>
+                            </div>
+                        </div>
+
+                        <div class="work-card" onclick="openWorkPopup('фото/scribus/3.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/3.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Журнал</h3>
+                            </div>
+                        </div>
+
+                        <div class="work-card" onclick="openWorkPopup('фото/scribus/2.png', 'Логотип')">
+                            <div class="work-card__image">
+                                <div class="work-placeholder">
+                                    <img src="фото/scribus/2.png" alt="Редактирование фото" class="work-card__img ice">
+                                </div>
+                            </div>
+                            <div class="work-card__content">
+                                <h3 class="work-card__title">Журнал</h3>
+                            </div>
+                        </div>
+
+                        
+    </div>
+</div>
+
+
+<!-- HTML вкладка -->
+<div class="tab-pane" id="html">
+    <div class="works-grid">
+
+        <div class="work-card" onclick="openWorkPopup('фото/html/sev1.jpg', 'фото')">
+            <div class="work-card__image">
+                <div class="work-placeholder">
+                    <img src="фото/html/sev1.jpg" alt="HTML сайт" class="work-card__img">
+                </div>
+            </div>
+
+            <div class="work-card__content">
+                <h3 class="work-card__title">html</h3>
+            </div>
+        </div>
+        <div class="work-card" onclick="openWorkPopup('фото/html/sev2.jpg', 'фото')">
+            <div class="work-card__image">
+                <div class="work-placeholder">
+                    <img src="фото/html/sev2.jpg" alt="HTML сайт" class="work-card__img">
+                </div>
+            </div>
+            <div class="work-card__content">
+                <h3 class="work-card__title">html</h3>
+            </div>
+        </div>
+        <div class="work-card" onclick="openWorkPopup('фото/html/sev3.jpg', 'фото')">
+            <div class="work-card__image">
+                <div class="work-placeholder">
+                    <img src="фото/html/sev3.jpg" alt="HTML сайт" class="work-card__img">
+                </div>
+            </div>
+            <div class="work-card__content">
+                <h3 class="work-card__title">html</h3>
+            </div>
+        </div>
+        <div class="work-card" onclick="openWorkPopup('фото/html/sev4.jpg', 'фото')">
+            <div class="work-card__image">
+                <div class="work-placeholder">
+                    <img src="фото/html/sev4.jpg" alt="HTML сайт" class="work-card__img">
+                </div>
+            </div>
+            <div class="work-card__content">
+                <h3 class="work-card__title">html</h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+</main>
+
+<!-- POPUP (используем тот же, что и для достижений) -->
+<div class="popup" id="workPopup">
+    <div class="popup__content">
+        <button class="popup__close" id="workPopupClose">×</button>
+        <img src="" alt="" class="popup__img" id="workPopupImg">
+    </div>
+</div>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <p class="footer__copyright">&copy; 2026 Мареев Александр</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/tabs.js"></script>
+    <script src="js/works.js"></script>
+</body>
+</html>
